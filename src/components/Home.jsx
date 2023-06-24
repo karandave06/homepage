@@ -12,6 +12,7 @@ import youtube from '../../public/icons/youtube.png'
 import vercel from '../../public/icons/vercel.png'
 import git from '../../public/icons/github.png'
 import git2 from '../../public/icons/git2.0.png'
+import google from '../../public/icons/google.png'
 
 
 
@@ -69,6 +70,7 @@ const night = "Good Night"
 <Item src={gmail} link={'https://mail.google.com/mail/u/0/#inbox'}/>
 <Item src={git2} link={'https://github.com/'}/>
 <Item src={vercel} link={'https://vercel.com/dashboard'}/>
+<Item src={google} link={'https://www.google.com/'}/>
 
   </div>
 </div>
