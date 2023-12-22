@@ -36,7 +36,7 @@ const Home = () => {
     
     return (
       <div className="clock-container">
-        <h1 className="clock=font">{clocknw}</h1>
+        <h1 className="clock-font">{clocknw}</h1>
       </div>
     );
   };
@@ -45,13 +45,13 @@ const Home = () => {
 
   useEffect(() => {
     if (hour < 12) {
-      setgreeting("Good Morning");
+      setgreeting("GOOD MORNING");
     } else if (hour >= 12 && hour <= 16) {
-      setgreeting("Good Afternoon");
+      setgreeting("GOOD AFTERNOON");
     } else if (hour > 16 && hour <= 19) {
-      setgreeting("Good Evening");
+      setgreeting("GOOD EVENING");
     } else if (hour > 19 && hour < 24) {
-      setgreeting("Good Night");
+      setgreeting("GOOD NIGHT");
     }
   });console.log(hour, 'klajsdfkl')
 

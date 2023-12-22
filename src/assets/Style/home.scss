@@ -1,3 +1,5 @@
+ @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Petrona:wght@100&display=swap');
 h1,
 h2,
 h3,
@@ -10,7 +12,12 @@ p,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+//  font-family: 'Antic Slab', serif;
+font-family: 'Petrona', serif;
+  
 }
+
+
 
 .home {
   height: 100vh;
@@ -35,8 +42,8 @@ p,
     top: 20%;
     left: 10%;
     font-size: 50px;
-    // font-family: "Tilt Prism", cursive;
-    font-family: 'Alumni Sans Inline One', sans-serif;
+ 
+  
     color: rgb(0, 0, 0);
     // text-shadow: -8px 4px 4px rgba(246, 33, 5, 0.6);
     text-shadow: -8px 4px 4px rgba(202, 156, 246, 0.6);
@@ -48,8 +55,8 @@ p,
     top: 30%;
     left: 10%;
     font-size: 50px;
-    font-family: "Tilt Prism", cursive;
-    color: rgb(0, 0, 0);
+ 
+     color: rgb(0, 0, 0);
     text-shadow: -8px 4px 4px rgba(84, 25, 140, 0.6);
     animation: text 0.5s infinite;
     transition: all 0.8s;
@@ -90,8 +97,9 @@ p,
     width: 250px;
     border-radius: 50%;
 
-    >h1{
+    >.clock-font{
       font-size: 3rem;
+      font-family: 'Petrona', serif;
     }
   }
 
