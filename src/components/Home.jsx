@@ -18,8 +18,6 @@ import { useEffect, useState } from "react";
 import Loader from "./Loader";
 
 const Home = () => {
- 
-
   let time = new Date().toLocaleTimeString();
   let time2 = new Date();
 
@@ -27,25 +25,17 @@ const Home = () => {
   const [clocknw, setclock] = useState(time);
 
   const updateTime = () => {
-  let time =  new Date().toLocaleTimeString(); 
-   setclock(time);
+    let time = new Date().toLocaleTimeString();
+    setclock(time);
   };
 
-
-  setInterval(updateTime,1000)
- 
- 
+  setInterval(updateTime, 1000);
 
   const Clock = () => {
-    let newhour;
-
-    // if (hour > 12) {
-    //   newhour = hour - 12;
-    // }
-
+    
     return (
       <div className="clock-container">
- <h1 className="clock=font">{clocknw}</h1>
+        <h1 className="clock=font">{clocknw}</h1>
       </div>
     );
   };
@@ -55,14 +45,14 @@ const Home = () => {
   useEffect(() => {
     if (hour < 12) {
       setgreeting("Good Morning");
-    } else if (hour >= 12 && hour < 16) {
+    } else if (hour >= 12 && hour <= 16) {
       setgreeting("Good Afternoon");
-    } else if (hour > 16 && hour < 19) {
+    } else if (hour > 16 && hour <= 19) {
       setgreeting("Good Evening");
     } else if (hour > 19 && hour < 24) {
       setgreeting("Good Night");
     }
-  });
+  });console.log(hour, 'klajsdfkl')
 
   return (
     <div className="home">
