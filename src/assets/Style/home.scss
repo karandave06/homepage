@@ -1,3 +1,17 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .home {
   height: 100vh;
   width: 100%;
@@ -17,77 +31,100 @@
 
   > h1 {
     position: absolute;
-    //  text-align: center;
     text-transform: uppercase;
     top: 20%;
     left: 10%;
     font-size: 50px;
     font-family: "Tilt Prism", cursive;
-    color: rgb(161, 156, 156);
-    text-shadow: -8px 4px 4px rgba(192, 1, 1, 0.6);
+    color: rgb(0, 0, 0);
+    // text-shadow: -8px 4px 4px rgba(246, 33, 5, 0.6);
+    text-shadow: -8px 4px 4px rgba(202, 156, 246, 0.6);
     animation: text 0.5s infinite;
   }
 
-
   > h2 {
     position: absolute;
-    //  text-align: center;
     top: 30%;
     left: 10%;
     font-size: 50px;
     font-family: "Tilt Prism", cursive;
-    color: rgb(161, 156, 156);
-    text-shadow: -8px 4px 4px rgba(192, 1, 1, 0.6);
-    animation: text  0.5s infinite;
+    color: rgb(0, 0, 0);
+    text-shadow: -8px 4px 4px rgba(84, 25, 140, 0.6);
+    animation: text 0.5s infinite;
     transition: all 0.8s;
   }
 
-  >.gif{
+  > .gif {
     position: absolute;
     right: 0%;
     top: 0%;
     width: 300px;
 
-    >img{
-width: 100%;
+    > img {
+      width: 100%;
     }
   }
 
-  >.icons{
+  > .clock {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: 300px;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > h1 {
+      color: black;
+      font-size: 2rem;
+    }
+  }
+
+  .clock-container {
+    height: 30%;
+    width: 250px;
+    border-radius: 50%;
+
+    >h1{
+      font-size: 3rem;
+    }
+  }
+
+  > .icons {
     position: absolute;
     bottom: 20%;
     left: 10%;
-    >.container{
+    > .container {
       display: flex;
       align-items: center;
       gap: 1rem;
       flex-wrap: wrap;
       width: 80%;
->.item{
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-  background: rgb(255, 255, 255);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition:all ease .2s;
+      > .item {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        // background: rgb(255, 255, 255);
+        background: #211c1d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all ease 0.2s;
 
-  &:hover{
-    background: #000;
-  transition:ease 0.2s;
+        &:hover {
+          // background: #000;
+          background: #e90f0f;
+          transition: ease 0.2s;
+        }
 
-  }
-
- 
-  >a{
-   
-    >img{
-      height: 50px;
-      width: 50px; 
-      object-fit: cover;
-    }
+        > a {
+          > img {
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+          }
         }
       }
     }
@@ -97,14 +134,11 @@ width: 100%;
 @keyframes text {
   0% {
     text-shadow: -8px 4px 4px rgba(207, 200, 200, 0.6);
-   
   }
   50% {
     text-shadow: -8px 4px 4px rgba(160, 62, 62, 0.6);
-    
   }
   100% {
     text-shadow: -8px 4px 4px rgba(192, 1, 1, 0.6);
-    
   }
 }
