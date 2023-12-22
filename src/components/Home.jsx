@@ -2,6 +2,7 @@ import "../assets/Style/home.scss";
 
 import homepage from "../../public/homepage7.jpg";
 import gif from "../../public/jarvis2.gif";
+import side from '../../public/small-spyder.png'
 import gpt from "../../public/icons/chatgpt.png";
 import gmail from "../../public/icons/Gmail-logo.png";
 import linkdin from "../../public/icons/linkedin.png";
@@ -66,7 +67,7 @@ const Home = () => {
 
       <div className="gif">
         <img
-          src={gif}
+          src={side}
           alt="gif-imageloading"
           // onLoad={() => setImageLoading(false)}
         />
