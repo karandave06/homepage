@@ -2,7 +2,7 @@ import "../assets/Style/home.scss";
 
 import homepage from "../../public/homepage7.jpg";
 import gif from "../../public/jarvis2.gif";
-import side from '../../public/small-spyder.png'
+import side from "../../public/small-spyder.png";
 import gpt from "../../public/icons/chatgpt.png";
 import gmail from "../../public/icons/Gmail-logo.png";
 import linkdin from "../../public/icons/linkedin.png";
@@ -13,10 +13,9 @@ import vercel from "../../public/icons/vercel.png";
 import git2 from "../../public/icons/git2.0.png";
 import google from "../../public/icons/google.png";
 import chess from "../../public/icons/chess.png";
-
+import PreLoader from "./Loader/PreLoader";
 import figma from "../../public/icons/figma.png";
 import { useEffect, useState } from "react";
-import Loader from "./Loader";
 
 const Home = () => {
   let time = new Date().toLocaleTimeString();
@@ -24,6 +23,7 @@ const Home = () => {
 
   const hour = time2.getHours();
   const [clocknw, setclock] = useState(time);
+
 
   const updateTime = () => {
     let time = new Date().toLocaleTimeString();
@@ -33,7 +33,6 @@ const Home = () => {
   setInterval(updateTime, 1000);
 
   const Clock = () => {
-    
     return (
       <div className="clock-container">
         <h1 className="clock-font">{clocknw}</h1>
@@ -53,7 +52,8 @@ const Home = () => {
     } else if (hour > 19 && hour < 24) {
       setgreeting("GOOD NIGHT");
     }
-  });console.log(hour, 'klajsdfkl')
+  });
+ 
 
   return (
     <div className="home">
