@@ -94,7 +94,7 @@ const Home = () => {
           <Item
             src={chess}
             link={
-              "https://www.chess.com/play/online/new?action=createLiveChallenge&base=600&timeIncrement=0"
+              "https://www.chess.com/home"
             }
           />
           <Item src={gmail} link={"https://mail.google.com/mail/u/0/#inbox"} />
